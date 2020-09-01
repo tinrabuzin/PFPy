@@ -23,6 +23,7 @@ The model contains a controllable voltage source at the PCC. CSV files are gener
 ### Linearization Examples
 
 The same model is linearized as seen from the PCC in the following [Jupyter notebook](https://github.com/tinrabuzin/PFPy/blob/master/examples/linearization.ipynb).
+When compared to the linearization in PowerFacory, this code, in addition to the A matrix, provides also B,C, and D matrices.
 
 ## Documentation
 
