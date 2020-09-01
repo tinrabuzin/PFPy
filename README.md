@@ -10,16 +10,16 @@ It has been developed at the Division of Electric Power and Energy Systems, KTH 
 The code has been tested with PowerFactory 2019 and PowerFactory 2020. It should be noted that $PYTHONPATH needs to point to the PowerFactory Python API.
 
 ## Examples
-The PowerFactory model using in all of the examples is located in [./examples/data/models/PFPY_DEMO.pfd](https://github.com/tinrabuzin/PFPYTest/blob/master/examples/data/models/PFPY_DEMO.pfd)
+The PowerFactory model using in all of the examples is located in [./examples/data/models/PFPY_DEMO.pfd](https://github.com/tinrabuzin/PFPy/blob/master/examples/data/models/PFPY_DEMO.pfd)
 
 ### Simulation Example
 
-The simulation of the aforementioned model is demonstrated in the [simulation example](https://github.com/tinrabuzin/PFPYTest/blob/master/examples/simulation_with_inputs.py).
+The simulation of the aforementioned model is demonstrated in the [simulation example](https://github.com/tinrabuzin/PFPy/blob/master/examples/simulation_with_inputs.py).
 The model contains a controllable voltage source at the PCC. CSV files are generated that are replayed at the PCC, simulation is executed and the results are plotted.
 
 ### Linearization Examples
 
-The same model is linearized as seen from the PCC in the following [Jupyter notebook](https://github.com/tinrabuzin/PFPYTest/blob/master/examples/linearization.ipynb).
+The same model is linearized as seen from the PCC in the following [Jupyter notebook](https://github.com/tinrabuzin/PFPy/blob/master/examples/linearization.ipynb).
 
 ## Documentation
 
