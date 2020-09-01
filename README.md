@@ -10,7 +10,7 @@ Furthermore,  `pfpy.models` provides a high-level access to PowerFactory models,
 
 It has been developed at the Division of Electric Power and Energy Systems, KTH Royal Institute of Technology.
 
-The code has been tested with PowerFactory 2019 and PowerFactory 2020. It should be noted that $PYTHONPATH needs to point to the PowerFactory Python API.
+The code has been tested with PowerFactory 2019 and PowerFactory 2020. Note that $PYTHONPATH needs to point to the PowerFactory Python API.
 
 ## Examples
 The PowerFactory model used in all of the examples is located in [./examples/data/models/PFPY_DEMO.pfd](https://github.com/tinrabuzin/PFPy/blob/master/examples/data/models/PFPY_DEMO.pfd)
@@ -27,3 +27,7 @@ The same model is linearized as seen from the PCC in the following [Jupyter note
 ## Documentation
 
 Automatically generated documentation from docstrings can be found [here](https://pfpy.readthedocs.io/en/latest/).
+
+### Acknowledgments
+Parts of this code were inspired by the following book:
+*Francisco Gonzalez-Longatt, José Luis Rueda Torres, Advanced Smart Grid Functionalities Based on PowerFactory, Springer, 2017*
