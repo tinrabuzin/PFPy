@@ -1,4 +1,6 @@
-# PFPy
+# PFPy - PowerFactory with Python
+
+[![Documentation Status](https://readthedocs.org/projects/pfpy/badge/?version=latest)](https://pfpy.readthedocs.io/en/latest/?badge=latest)
 
 PFPy provides a wrapper around PowerFactory's Python API with additional features in  `pfpy.pf`. 
 Furthermore,  `pfpy.models` provides a high-level access to PowerFactory models, e.g. via:
@@ -24,4 +26,4 @@ The same model is linearized as seen from the PCC in the following [Jupyter note
 
 ## Documentation
 
-Automatically generated documentation from docstrings can be found [here](https://tinrabuzin.github.io/PFPYTest/).
+Automatically generated documentation from docstrings can be found [here](https://pfpy.readthedocs.io/en/latest/).
