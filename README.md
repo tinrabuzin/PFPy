@@ -10,7 +10,16 @@ Furthermore,  `pfpy.models` provides a high-level access to PowerFactory models,
 
 It has been developed at the Division of Electric Power and Energy Systems, KTH Royal Institute of Technology.
 
-The code has been tested with PowerFactory 2019 and PowerFactory 2020. Note that $PYTHONPATH needs to point to the PowerFactory Python API.
+The code has been tested with PowerFactory 2019 and PowerFactory 2020. 
+
+## Installation
+
+The module can be installed using pip as follows:
+```
+pip install pfpy
+```
+
+All the requirements except `powerfactory` API should be installed. Note that $PYTHONPATH needs to point to the PowerFactory Python API to be able to use it. It is located in `%POWERFACTORYPATH/Python/%version`. The code has been tested with Python 3.7 and 3.8.
 
 ## Examples
 The PowerFactory model used in all of the examples is located in [./examples/data/models/PFPY_DEMO.pfd](https://github.com/tinrabuzin/PFPy/blob/master/examples/data/models/PFPY_DEMO.pfd)
