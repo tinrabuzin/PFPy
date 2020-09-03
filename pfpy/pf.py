@@ -84,9 +84,9 @@ class Project(BasePFObject):
         self.study_cases = StudyCaseContainer()
         # Creating the networks container
         self.networks = {pfobject.loc_name : Network(pfobject, observers = self.study_cases) 
-                        for pfobject in pfhandle.GetProjectFolder('netdat').GetContents('*.ElmNet')
+                        for pfobject in pfhandle.GetProjectFolder('netdat').GetChildren(1, '*.ElmNet', 1)
                         }
-        for pfobject in pfhandle.GetProjectFolder('netdat').GetContents('*.ElmNet'):
+        for pfobject in pfhandle.GetProjectFolder('netdat').GetChildren(1, '*.ElmNet', 1):
             self.networks[pfobject.loc_name] = Network(pfobject, observers = self.study_cases)
     
     def activate(self, project_path):
@@ -98,10 +98,9 @@ class Project(BasePFObject):
 class StudyCaseContainer(dict):
     def __init__(self):
         scs = {}
-        obj_list = pfhandle.GetProjectFolder('study').GetContents()
+        obj_list = pfhandle.GetProjectFolder('study').GetChildren(1,'*.IntCase',1)
         for obj in obj_list:
-            if obj.GetClassName() == 'IntCase':
-                scs[obj.loc_name] = StudyCase(obj, observers=self)
+            scs[obj.loc_name] = StudyCase(obj, observers=self)
         super().__init__(scs)
         self._active_key = pfhandle.GetActiveStudyCase().loc_name
 
