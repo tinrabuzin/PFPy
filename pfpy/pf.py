@@ -407,8 +407,13 @@ class ElmRes(BasePFObject):
             self.state = ElmRes.LOADED  
         # Get variable names
         var_values = np.array([[self.pfobject.GetValue(i, j)[1] for j in range(-1, self.n_cols)] for i in range(self.n_rows)])
+        var_names = []
+        for j in range(self.n_cols):
+            elm = self.GetObject(j)
+            var = self.GetVariable(j)
+            var_names.append(f'{elm.loc_name}.{elm.GetClassName()}\\{var}')
         # Create Pandas data frame  
-        results = pd.DataFrame(data=var_values[:,1:], index=var_values[:,0], columns=self.head)
+        results = pd.DataFrame(data=var_values[:,1:], index=var_values[:,0], columns=var_names)
         # Release from memory since it might be processed in the loop (check!)
         self.state = ElmRes.NOTLOADED
         return results
